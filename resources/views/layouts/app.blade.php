@@ -10,15 +10,20 @@
     <title>{{ config('app.name', 'Netinfo') }}</title>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <link rel="stylesheet" href="{{ asset('jquery-ui/jquery-ui.css') }}">
+    <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
 
+    <script src="{{ asset('js/jquery-3.3.1.js') }}" ></script>
+    <script src="{{ asset('jquery-ui/jquery-ui.min.js') }}" ></script>
+    <script src="{{ asset('js/popper.min.js') }}" ></script>
+    <script src="{{ asset('js/bootstrap.js') }}" ></script>
     <!-- Fonts -->
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
 </head>
 <body>
-    <div id="app">
+
         <nav class="navbar navbar-expand-md bg-dark navbar-dark navbar-laravel">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
@@ -118,6 +123,6 @@
             @include('inc.messages')
             @yield('content')
         </div>
-    </div>
+
 </body>
 </html>

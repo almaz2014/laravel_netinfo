@@ -23,3 +23,5 @@ Route::resource('/netdev','NetdevController');
 Route::resource('/port','PortController');
 Route::resource('/journal','JournalController');
 Route::get('/searchme','SearchMeController@find');
+Route::post('/ajax','SearchMeController@search');
+Route::get('/ajaxc','SearchMeController@complete');
